@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'VT323', monospace;
+	background-size: cover;
+	font-size: 24px;
+}
+h1{
+	text-align: center;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	margin: 25px auto; 
+}
+button{
+	padding: 1rem;
+	font-size: 162%;
+	line-height: 1.5;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	cursor: pointer;
+	color: white;
+	font-family: 'VT323', monospace;
+	text-transform: uppercase;
+	min-width: 169px;
+}
+.one{
+	background-color: #881400;
+}
+.one:hover, .one:focus{
+	background-color: #A81000;
+}
+.two{
+	background-color: #005800;
+}
+.two:focus, .two:hover{
+	background-color: #006800;
+}
+
+.three{
+	background-color: #0000BC
+}
+.three:focus, .three:hover{
+	background-color: #0000FC
+}
+.curr{
+	text-align: center;
+}
+.scoreBoard{
+	display: flex;
+	justify-content: space-around;
+	font-size: 2rem;
+	padding: 3.5rem 2rem;
+	margin:30px 100px;
+	border: 16px solid transparent;
+	border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+	              #58a 0, #58a 3em, transparent 0, transparent 4em);
+}
+#roundRes{
+	text-align: center;
+}
+#declaration {
+   -webkit-animation: flickerAnimation .7s infinite;
+   -moz-animation: flickerAnimation .7s infinite;
+   -o-animation: flickerAnimation .7s infinite;
+    animation: flickerAnimation .7s infinite;
+
+    font-size: 2rem;
+    text-align: center;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
